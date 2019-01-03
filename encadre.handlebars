@@ -6,14 +6,14 @@
 	</div>
 {{/if}}
 
-{{! ------------------- DO NOT MODIFY ------------------- }}
+{{! ------------------- NE PAS MODIFIER ------------------- }}
 <div class="invoice_outline encadre" {{#if status_paid}}{{#if show_paid_logo}}{{#not_in kind "proforma,estimate"}}style="background:transparent url('{{paid_mark_url}}') no-repeat 50% bottom;"{{/not_in}}{{/if}}{{/if}} >
 
 
 	{{#if payment_url}}
 		<a class="pull-right btn btn-default btn-print" id="pay-online-button" style="margin-bottom:10px;" href="{{payment_url}}">{{tt "account.pay_online_button"}}&nbsp;&raquo;</a>
 	{{/if}}
-{{! ----------------- end DO NOT MODIFY ----------------- }}
+{{! ----------------- end NE PAS MODIFIER ----------------- }}
 
 	<section id="invoice_header">
 		<div id="top_left">
